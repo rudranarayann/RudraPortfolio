@@ -1,0 +1,118 @@
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+/* 1) Animated Gradient Background */
+@keyframes gradientBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradientBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-bg-gradient {
+  background: linear-gradient(
+    270deg,
+    #0ea5e9, /* sky-500 */
+    #10b981, /* emerald-500 */
+    #facc15  /* yellow-400 */
+  );
+  background-size: 600% 600%;
+  animation: gradientBackground 15s ease infinite;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in-down {
+  animation: fadeInDown 1.2s ease-out forwards;
+}
+
+.animate-fade-in {
+  animation: fadeIn 2s ease-out forwards;
+}
+
+.animate-gradient {
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+}
+.animate-gradient {
+  background-size: 400% 400%;
+  animation: gradient 12s ease infinite;
+}
+.input {
+  @apply w-full px-4 py-3 rounded-md border border-gray-300 text-white focus:outline-none focus:ring-2 focus:ring-indigo-400;
+}
