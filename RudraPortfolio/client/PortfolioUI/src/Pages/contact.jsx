@@ -33,7 +33,7 @@ const Contact = () => {
     });
 
     try {
-      await axios.post("http://localhost:6500/api/message", data);
+      await axios.post("https://rudraportfolio-o3rp.onrender.com", data);
       toast.success("Message sent successfully!");
       setFormData({
         name: "",
